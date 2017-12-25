@@ -28,7 +28,7 @@ contract VergePrice is usingOraclize {
     
     function update() payable {
         newOraclizeQuery("Oraclize query sent, waiting for an answer..");
-        oraclize_query("URL", "json(https://api.coinmarketcap.com/v1/ticker/verge/).price_usd");
+        oraclize_query("URL", "json(https://api.coinmarketcap.com/v1/ticker/verge/).0.price_usd");
     }
     
 }
